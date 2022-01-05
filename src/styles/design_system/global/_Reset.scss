@@ -1,0 +1,88 @@
+////
+/// @author Schiller UX/UI Design Department
+/// @since v3.1.0
+/// @since Sep/2020
+/// @group Reset
+/// This file contains the html native properties, and the modifiers for specific browsers, in order to reset them for the correct function of the created layouts.
+////
+
+html {
+
+    box-sizing: border-box;
+
+    @viewport {
+
+        zoom: .75;
+        width: device-width;
+        min-width: 320px;
+        max-width: 768px;
+        min-zoom: .5;
+        max-zoom: .9;
+
+    }
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+
+    white-space: pre-line;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+
+}
+
+h4 {
+    text-align: center;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    opacity: 1;
+    color: rgba(17, 17, 17, .5)
+
+}
+
+tspan,
+text {
+
+    font-family: Roboto-regular, Sans-Serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+
+}
+
+button {
+
+    border: none;
+
+}
+
+a {
+
+    cursor: pointer;
+    text-decoration: underline;
+
+}
